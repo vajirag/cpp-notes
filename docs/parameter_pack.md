@@ -31,7 +31,7 @@ In the example, the template function ```join``` accepts variable number of argu
 
 This template funtion is a new type of a template called **variadic template**. As you can see, a **variadic template** is a  template that accepts variable number of template parameters.
 
-```args...``` expands the parameter pack during the recursive calls to join function.
+```args...``` expands the parameter pack during the recursive instantiation of template function join.
 
 ```c++
 #include <gtest/gtest.h>
