@@ -16,7 +16,7 @@ Moving on, you will notice the ellipsis (...) notation in use in next example, w
 
 ```c++
 template <typename T, typename... Ts>
-void concat(std::stringstream& ss, T arg, Ts... args)
+void join(std::stringstream& ss, T arg, Ts... args)
 ```
 
 Here, ```typename...``` denotes a variable number of typenames in ```typename... Ts``` template parameter declaration. Therefore, ```Ts``` is not just a template parameter, but a **template parameter pack**.
