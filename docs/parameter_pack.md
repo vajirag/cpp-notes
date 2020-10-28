@@ -1,6 +1,8 @@
+# Parameter Pack
+
 Parameter pack is simply a sequence of type and value pairs, introduced with C++11 standard.
 
----
+## Template Parameter and Funtion Parameters
 
 Before diving into parameter pack concept, lets start with basic template specific terminology. In the following example:
 ```c++
@@ -10,7 +12,7 @@ void my_print(T param)
 
 ```T``` is a **template parameter** and ```param``` is a **function parameter**.
 
----
+## Template Parameter Pack and Function Parameter Pack
 
 Moving on, you will notice the ellipsis (...) notation in use in next example, which is common in computer programming domain to denote ranges or variable numbers of items.
 
@@ -24,7 +26,8 @@ Here, ```typename...``` denotes a variable number of typenames in ```typename...
 Similarly, ```Ts...``` denotes variable number of parameter types in ```Ts... args``` function parameter declartion.
 Therefore ```args``` is not just a function parameter, but a **function parameter pack**.
 
----
+## Variadic Templates
+
 Next example shows the practical usecase of **parameter pack** with new type of a template called **variadic template**.
 
 In the example, the template function ```join``` accepts variable number of arguments of different types and joins it with the delimitor '|'. For example you can use this function to join any type of argument that supports ```operator<<``` like int, float, string or user-defined type with ```operator<<```.
